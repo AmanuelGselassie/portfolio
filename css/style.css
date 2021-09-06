@@ -400,6 +400,7 @@ header {
     overflow: hidden;
     justify-self: center;
     height: 525px;
+    position: relative;
 }
 
 .portfolio__img {
@@ -421,6 +422,21 @@ header {
     opacity: .5;
 }
 
+.portfolio__item:hover .img__description {
+  z-index: 3;
+}
+
+.img__description {
+    position: absolute;
+    top: 200px;
+    left: 55px;
+    width: 50%;
+    color: black;
+    font-weight: 700;
+    font-size: 20px;
+    pointer-events: none;
+    z-index: -1;
+}
 
 /* footer */
 
